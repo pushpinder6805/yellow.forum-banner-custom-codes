@@ -1,0 +1,183 @@
+
+
+<script type="text/discourse-plugin" version="0.8.13">
+api.reopenWidget("header-buttons", {
+      tagName: "span.header-buttons",
+
+  html(attrs) {
+    if (this.currentUser) {
+      return;
+    }
+
+    const buttons = [];
+
+    if (attrs.canSignUp) {
+      buttons.push(
+        this.attach("button", {
+          label: "sign_up",
+          className: "btn-primary btn-small sign-up-button",
+          action: "showCreateAccount"
+        })
+      );
+    }
+    if (attrs.canSignUp) {
+      buttons.push(
+        this.attach("button", {
+           label: "log_in", // Use 'text' instead of 'label'
+          className: "btn-primary btn-small up-button",
+          action: () => {
+            window.location.href = "https://donate.stripe.com/bIY9BtbmEawueC4bIL?locale=en&__embed_source=buy_btn_1PTVIRIdwyDCjzwhf7PlhZ5X";
+          }
+        })
+      );
+    }
+    if (attrs.canSignUp) {
+      buttons.push(
+        this.attach("button", {
+           label: "log_in", // Use 'text' instead of 'label'
+          className: "btn-primary btn-small sup-button",
+          action: "showLogin"
+        })
+      );
+    }
+    
+      
+    if (!attrs.topic) {
+    buttons.push(
+      this.attach("button", {
+        label: "log_in",
+        className: "btn-primary btn-small login-button",
+        action: "showLogin",
+        icon: "user"
+      })
+    );
+    }
+    
+    return buttons;
+  }
+});
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select the current user button
+    const currentUserButton = document.getElementById('toggle-current-user');
+
+    // Create a new donate button
+    const donateButton = document.createElement('button');
+    donateButton.classList.add('btn', 'btn-primary', 'btn-small', 'donate-button', 'donate-button-container');
+    donateButton.innerText = 'DONATE';
+
+    // Apply all the CSS styles to the donate button
+    donateButton.style.backgroundColor = '#ffef3f';
+    donateButton.style.padding = '10px 20px';
+    donateButton.style.color = 'black';
+    donateButton.style.borderRadius = '5px';
+    donateButton.style.cursor = 'pointer';
+    donateButton.style.border = 'none';
+    donateButton.style.fontSize = '15px';
+    donateButton.style.margin = '0'; // Ensure no margin issues
+    
+
+    // Set the donate button action
+    donateButton.onclick = function() {
+      window.location.href = 'https://donate.stripe.com/bIY9BtbmEawueC4bIL?locale=en&__embed_source=buy_btn_1PTVIRIdwyDCjzwhf7PlhZ5X';
+    };
+
+    // Insert the donate button before the current user button
+    currentUserButton.parentNode.insertBefore(donateButton, currentUserButton);
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select the current user button
+    const currentUserButton = document.getElementById('toggle-current-user');
+
+    // Create a new donate button
+    const donateButton = document.createElement('button');
+    donateButton.classList.add('btn', 'btn-primary', 'btn-small', 'donate-button', 'donate-button-container');
+    donateButton.innerText = 'SUBSCRIBE';
+
+    // Apply all the CSS styles to the donate button
+    donateButton.style.backgroundColor = '#ffef3f';
+    donateButton.style.padding = '10px 20px';
+    donateButton.style.color = 'black';
+    donateButton.style.borderRadius = '5px';
+    donateButton.style.cursor = 'pointer';
+    donateButton.style.fontSize = '15px';
+    donateButton.style.margin = '0'; // Ensure no margin issues
+    donateButton.style.boxShadow = 'rgba(0, 0, 0, .1) 0px 4px 8px, rgba(0, 0, 0, .05) 0px -3px 4px, rgba(0, 0, 0, .05) 0px 0px 5px';
+    donateButton.style.setProperty('margin-right', '20px', 'important');
+
+    // Set the donate button action
+    donateButton.onclick = function() {
+      window.location.href = 'https://yellow.forum/s';
+    };
+
+    // Insert the donate button before the current user button
+    currentUserButton.parentNode.insertBefore(donateButton, currentUserButton);
+  });
+</script>
+
+<script type="text/discourse-plugin" version="0.8">
+  const RawHtml = require("discourse/widgets/raw-html").default;
+
+  api.decorateWidget("post-menu:after", helper => {
+    const firstPost = helper.attrs.firstPost; // Check if it's the first post
+    if (firstPost) {
+      const postUrl = encodeURIComponent(window.location.href); // Encodes the post URL for sharing
+      const postTitle = encodeURIComponent(document.title); // Encodes the post title for sharing
+
+      return [
+        new RawHtml({
+          html: `<div class="banner00">
+              <h2>Join Yellow.Forum</h2>
+              <p>Join initiatives, follow experts, comment on posts,<br>
+              engage with community, crowdfunds projects, receive<br>
+              notifications, access additional Stakeholder Capitalism<br>
+              content and more. Help shape The Great Revolution.</p>
+
+              <a href="https://yellow.forum/signup" class="sign-up-btn">SIGN UP FREE</a>
+<div class="newsl">
+<p>Or</p>
+<iframe
+    src="https://api.strawberryjam.studio/widget/form/1JSx6z33e9SgpTzpe0mG"
+    style="width:100%; height:468px; border:none; border-radius:3px; overflow:hidden""
+    id="inline-1JSx6z33e9SgpTzpe0mG"
+    title="Yellow.Forum Newsletter Email Capture"
+    frameborder="0"  <!-- This attribute is allowed -->
+    scrolling="no"
+    marginheight="0"  <!-- This attribute is allowed -->
+    marginwidth="0"  <!-- This attribute is allowed -->
+    height="490"  <!-- This attribute is allowed -->
+    width="100%">  <!-- This attribute is allowed -->
+</iframe>
+</div>
+
+              <div class="social-media">
+              <p>And</p>
+                <p><b>Follow us on social media:</b></p>
+                <a href="https://x.com/YellowForum" target="_blank" class="sshare-icon" title="Share on X">
+                  <i class="fa-brands fa-x-twitter"></i> <!-- Font Awesome Twitter Icon -->
+                </a>
+                <a href="https://www.facebook.com/yellow.forum" target="_blank" class="sshare-icon" title="Share on Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram/yellow.forum" target="_blank" class="sshare-icon" title="Visit Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@YellowForum" target="_blank" class="sshare-icon" title="Visit YouTube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://rumble.com/user/yellowforum" target="_blank" class="sshare-icon" title="Visit Rumble">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+            </div>`
+        })
+      ];
+    }
+  });
+</script>

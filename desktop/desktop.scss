@@ -1,0 +1,322 @@
+
+
+
+.banner00 {
+    margin-top: 34px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.banner00 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner00 p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+.sign-up-btn {
+    display: inline-block;
+    background-color: #ffeb3b;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 138px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+  margin-top: -8em;
+}
+
+.social-media p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: Montserrat, Arial, sans-serif !important;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%); /* To make icons grayscale like the design */
+}
+
+.social-media img:hover {
+  filter: none; /* Remove grayscale on hover */
+}
+
+//banner-post//
+#my-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ensure it takes the full width of the container */
+}
+
+#my-button .btn {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px, rgba(0, 0, 0, 0.05) 0px -3px 4px, rgba(0, 0, 0, 0.05) 0px 0px 5px;
+    display: inline-block;
+    padding: 12px 25px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+/*.panel .header-buttons .sign-up-button {
+    margin-top: -5px;
+    width: 139px;
+    height: 42px;
+    display: inline-flex;
+    filter: drop-shadow(0px 0px 4px rgba(33, 33, 33, 0.15));
+    font-family: Helvetica;
+    font-size: 16px;
+    color: black;
+}
+
+.panel .header-buttons .login-button {
+    margin-top: -5px;
+    width: 139px;
+    height: 42px;
+    display: inline-flex;
+    filter: drop-shadow(0px 0px 4px rgba(33, 33, 33, 0.15));
+    font-family: Helvetica;
+    font-size: 16px;
+    color: black;
+}
+*/
+
+.panel .header-buttons .sign-up-button {
+    color: black;
+    padding: 11px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px, rgba(0, 0, 0, 0.05) 0px -3px 4px, rgba(0, 0, 0, 0.05) 0px 0px 5px;
+
+}
+
+.panel .header-buttons .login-button {
+    color: black;
+}
+.custom-header-links {
+    display: flex !important;
+
+}
+
+.headerLink.headerLink--vdo.donate-custom-header-links.headerLink--undefined a{
+    text-transform: uppercase;
+    color: black;
+    filter: unset;
+
+}
+.headerLink.headerLink--vdo.donate-custom-header-links.headerLink--undefined {
+    display: none;
+    margin-top: 6px;
+}
+.headerLink.headerLink--vdo.donate-custom-header-links.headerLink--undefined a:hover{
+    color: #fff;
+    background: #262626;
+}
+
+.headerLink.headerLink--vdm.subscribe-custom-header-links.headerLink--keep a:hover{
+    color: #fff;
+    background: #262626;
+}
+.headerLink.headerLink--vdm.subscribe-custom-header-links.headerLink--keep a{
+    color: black;
+}
+.headerLink.headerLink--vdm.subscribe-custom-header-links.headerLink--keep{
+    margin-top: 6px;
+}
+.custom-header-links li.headerLink a {
+    font-size: 14px;
+}
+
+
+.buttons2 {
+    display: none !important;
+}
+
+.banner-box h3 {
+    margin-top: -23px;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+#main .banner-box {
+    height: 23em;
+}
+
+.banner-box h1, .banner-box h2, .banner-box h3 {
+    color: black
+}
+
+.x-title {
+    margin-top: 27px !important;
+    font-size: 60px;
+    font-family: Helvetica;
+}
+
+//share page//
+
+.custom-share-section {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: flex-start; /* Align everything to the left */
+    margin-top: 20px;
+}
+
+.share-title {
+    margin-bottom: 10px; /* Space between "Share page:" and icons */
+    font-weight: bold;
+}
+
+.icon-row.hidden-icons {
+    margin-top: 0px;
+    max-width: 150px;
+}
+.icon-row {
+    margin-top: -31px;
+    display: flex;
+    align-items: center;
+    margin-left: 116px;
+}
+
+.hidden-icons {
+    display: none; /* Initially hidden */
+    flex-wrap: wrap; /* Allow icons to wrap into rows */
+    gap: 0px; /* Space between rows and icons */
+}
+
+
+.show-icons .hidden-icons {
+    display: flex; /* Show hidden icons when toggle is active */
+    flex-wrap: wrap; /* Wrap icons into multiple rows */
+    max-width: 150px; /* Limit the width to ensure rows of 4 icons */
+    gap: 10px;
+}
+
+.share-icon {
+    font-size: 14px;
+    background-color: #fdf063;
+    border-radius: 50%;
+    width: 14px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+.share-icon i {
+    color: #333; /* Default icon color */
+}
+
+.share-icon:hover {
+    background-color: #333; /* Change background color on hover */
+}
+
+.share-icon:hover i {
+    color: #fdf063; /* Change icon color to yellow on hover */
+}
+
+.toggle-icons {
+    //align-self: center;
+    cursor: pointer;
+}
+
+.toggle-icons i {
+    margin-top: 12px; 
+    font-size: 20px;
+    color: #333;
+}
+
+.toggle-icons i:hover {
+    color: #fdf063;
+}
+
+//new//
+ .icon-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .share-icon {
+    margin-right: 10px;
+    background-color: #fdf063;
+    border-radius: 50%;
+    color: black;
+  }
+
+  .toggle-icons {
+    margin-left: 1px;
+    cursor: pointer;
+  }
+  
+.fab.fa-whatsapp {
+    font-size: 17px;
+    margin-left: 2px;
+    margin-top: -1px;
+}
+
+.fab.fa-facebook-messenger{
+    font-size: 17px;
+    margin-left: 2px;
+    margin-top: -1px;
+}
+.share-icon {
+
+    padding: 2px 8px 0px 7px;
+    margin-top: 6px;
+    margin-right: 6px;
+    border-radius: 52px;
+    border: 1px solid #fdf063;
+}
+
+//banner topics share //
+
+.sshare-icon {
+    font-size: 26px;
+    background-color: #fdf063;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+.sshare-icon i {
+    margin-top: 9px;
+    color: #333;
+}
+
+.sshare-icon:hover {
+    background-color: #333; /* Change background color on hover */
+}
+
+.sshare-icon:hover i {
+    color: #fdf063; /* Change icon color to yellow on hover */
+}
+

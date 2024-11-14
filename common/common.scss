@@ -1,0 +1,221 @@
+iframe[src*="wistia.net"] {
+    aspect-ratio: 16 /9;
+    height: auto;
+}
+
+[data-post-id="1963"][data-topic-id="1445"] .lightbox-wrapper {
+    display: none !important;
+}
+
+[data-topic-id="1454"] .lightbox-wrapper{
+    display: none !important;
+}
+[data-post-id="1883"][data-topic-id="1411"] .lightbox-wrapper {
+    display: none !important;
+}
+
+.names>span {
+    display: none;
+}
+
+.first.new-user:not(.staff) a {
+    color: #000000;
+}
+.names>span a {
+    color: #000000;
+    outline-offset: -1px;
+}
+
+.powered-by-discourse {
+    display: none;
+}
+
+
+.signup-cta.alert.alert-info {
+  display: none;
+}
+
+
+:not(.sidebar-section-header,.sidebar-more-section-links-details-summary).btn {
+    color: #000000;
+}
+
+.panel .header-buttons .login-button {
+    display: none;
+}
+
+.custom-header-links li.headerLink a {
+    font-size: 15.4px !important;
+}
+
+/* Hide the original text */
+.widget-button.btn.btn-primary.btn-small.up-button.btn-text .d-button-label {
+    display: none; /* Hide the original text */
+}
+
+/* Add new text using pseudo-element */
+.widget-button.btn.btn-primary.btn-small.up-button.btn-text::after {
+    content: "DONATE"; /* New text to display */
+    display: inline-block; /* Ensures it behaves like an inline element */
+    color: Black; /* Change this if you want a different color */
+    font-size: inherit; /* Ensures the font size is the same as the original */
+    /* You can add other styles here if needed */
+}
+
+
+.anon .headerLink.headerLink--vdm.subscribe-custom-header-links.headerLink--keep{
+    display: none;
+}
+
+.anon .headerLink.headerLink--vdo.donate-custom-header-links.headerLink--keep{
+    display: none;
+}
+
+.headerLink.headerLink--vdm.subscribe-custom-header-links.headerLink--keep{
+}
+.headerLink.headerLink--vdo.donate-custom-header-links.headerLink--keep a{
+    filter: none !important;
+}
+.headerLink.headerLink--vdo.donate-custom-header-links.headerLink--keep{
+    padding: none !important;
+    background-color: none !important;
+    border-radius: 0px !important;
+    filter: drop-shadow(0px 0px 0px rgba(00, 00, 00, 0.0)) !important;
+    margin-left: 10px;
+    font-size: 16px !important;
+    margin-top: 5px;
+}
+
+.up-button:hover {
+    background: none !important; /* Remove background on hover */
+    color: black !important;
+    border-radius: 0; /* Remove border radius on hover */
+}
+
+
+.up-button {
+    background: none; /* Remove background on hover */
+    border-radius: 0; /* Remove border radius on hover */
+    margin-left: 10px;
+}
+/* Ensure the current user icon stays aligned */
+#toggle-current-user {
+    display: inline !important; /* Ensure the user button stays in the same line */
+
+}
+
+//
+.extra-info-wrapper .extra-info {
+    display: none;
+}
+
+
+.topic-post .widget-button.btn-flat.post-action-menu__copy-link.no-text.btn-icon {
+  display: none; // Hide the button by default
+}
+
+.topic-post:first-of-type .widget-button.btn-flat.post-action-menu__copy-link.no-text.btn-icon {
+  display: inline-flex; // Show the button only on the first post
+}
+
+
+.actions button.post-action-menu__copy-link span {
+  visibility: hidden;
+}
+.actions button.post-action-menu__copy-link span {
+    margin-left: -49px !important;
+}
+
+.actions button.post-action-menu__copy-link span::after {
+  content: "Copy Page";
+  visibility: visible;
+  display: inline-block;
+  position: static; /* Reset positioning to avoid overlap */
+  font-size: inherit; /* Ensure text size matches the original */
+  line-height: inherit; /* Ensure line height matches */
+}
+
+
+
+/*
+
+.custom-share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.share-title {
+    margin-top: -28px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.icon-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: -38px;
+    margin-left: 102px;
+}
+
+.icon-row {
+    display: flex;
+    gap: 5px; 
+}
+
+.hidden-icons {
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.show-icons .hidden-icons {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.share-icon {
+    font-size: 12px; 
+    background-color: #ffef3f;
+    color: #333;
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.share-icon i {
+    color: #333; 
+}
+
+.share-icon:hover {
+    background-color: #333;
+}
+
+.share-icon:hover i {
+    color: #ffef3f; 
+}
+
+.toggle-icons {
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-icons i {
+    font-size: 20px;
+    color: #333;
+}
+
+.toggle-icons i:hover {
+    color: #ffef3f;
+}
+*/
+
+//test//
